@@ -1,0 +1,65 @@
+int addNumbers(int num1, int num2) {
+  return num1 + num2;
+}
+
+void main() {
+  int result = addNumbers(3, 5);
+  print("Result of adding 3 and 5: $result");
+}
+void main() {
+  for (int i = 1; i <= 10; i++) {
+    print(i);
+  }
+}
+void switchCase(String argument) {
+  switch (argument) {
+    case "case1":
+      print("Response for case 1");
+      break;
+    case "case2":
+      print("Response for case 2");
+      break;
+    case "case3":
+      print("Response for case 3");
+      break;
+    default:
+      print("Invalid case");
+  }
+}
+
+void main() {
+  switchCase("case2");
+}
+void main() {
+  int num = 20;
+  while (num >= 10) {
+    print(num);
+    num--;
+  }
+}
+void checkEvenOdd(int num) {
+  if (num % 2 == 0) {
+    print("$num is even");
+  } else {
+    print("$num is odd");
+  }
+}
+
+void main() {
+  checkEvenOdd(7);
+}
+int findLargestNumber(List<int> numbers) {
+  return numbers.reduce((curr, next) => curr > next ? curr : next);
+}
+
+void main() {
+  List<int> numbersList = [3, 7, 2, 9, 5];
+  print("Largest number in the list: ${findLargestNumber(numbersList)}");
+}
+void main() {
+  try {
+    var x = 1 ~/ 0; // This will throw an IntegerDivisionByZeroException
+  } catch (e) {
+    print("Error: $e");
+  }
+}
